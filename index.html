@@ -17,50 +17,7 @@
                         <th>Height</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>Silence</td>
-                        <td>赫默</td>
-                        <td>108</td>
-                        <td>18/05</td>
-                        <td>154</td>
-                    </tr>
-                    <tr>
-                        <td>Saria</td>
-                        <td>塞雷娅</td>
-                        <td>202</td>
-                        <td>23/04</td>
-                        <td>174</td>
-                    </tr>
-                    <tr>
-                        <td>Ifrit</td>
-                        <td>伊芙利特</td>
-                        <td>134</td>
-                        <td>22/07</td>
-                        <td>159</td>
-                    </tr>
-                    <tr>
-                        <td>Ptilopsis</td>
-                        <td>白面鸮</td>
-                        <td>128</td>
-                        <td>06/10</td>
-                        <td>164</td>
-                    </tr>
-                    <tr>
-                        <td>Mayer</td>
-                        <td>梅尔</td>
-                        <td>242</td>
-                        <td>20/11</td>
-                        <td>159</td>
-                    </tr>
-                    <tr>
-                        <td>Magallan</td>
-                        <td>麦哲伦</td>
-                        <td>248</td>
-                        <td>17/10</td>
-                        <td>160</td>
-                    </tr>
-                </tbody>
+                <tbody id="mainTable"></tbody>
             </table>
         </p>
         <p>
@@ -70,8 +27,22 @@
         <p>
             <h2 id="SelectRows">Get a column</h2>
             <pre class="prettyprint">= Table.SelectRows(Source, each [Codename] = "Silence" or [Codename] = "Saria")</pre>
-            <a href="https://docs.microsoft.com/fr-fr/powerquery-m/table-selectrows">Microsoft Documentation</a><br/>
-            Take all rows where "Codename" is either "Silence" or "Saria"
+            <p class="help">
+                Take all rows where "Codename" is either "Silence" or "Saria"
+            </p>
+            <a class="doc" href="https://docs.microsoft.com/fr-fr/powerquery-m/table-selectrows">Microsoft Documentation</a><br/><br/>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Codename</th>
+                        <th>Chinese</th>
+                        <th>ID</th>
+                        <th>Date of Birth</th>
+                        <th>Height</th>
+                    </tr>
+                </thead>
+                <tbody id="getColumnTable"></tbody>
+            </table>
         </p>
     </body>
     <script type="text/javascript" src="js/index.js"></script>
